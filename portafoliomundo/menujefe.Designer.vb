@@ -210,7 +210,7 @@ Partial Class menujefe
         Controls.Add(paneltitle)
         Controls.Add(panelmenu)
         Name = "menujefe"
-        Text = "Form1"
+        Text = "menu jefe"
         panelmenu.ResumeLayout(False)
         panellogo.ResumeLayout(False)
         CType(imghome, ComponentModel.ISupportInitialize).EndInit()

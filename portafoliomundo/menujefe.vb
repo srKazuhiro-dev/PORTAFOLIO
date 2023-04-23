@@ -98,7 +98,7 @@ Public Class menujefe
     '        FormBorderStyle = FormBorderStyle.Sizable
     'End If
     ' End Sub
-'---------------------------------------------------------------------
+    '---------------------------------------------------------------------
     'Botones General + eventos 
     Private Sub btnproveedor_Click(sender As Object, e As EventArgs) Handles btnproveedor.Click
         'color bnt

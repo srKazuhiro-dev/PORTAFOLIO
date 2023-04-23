@@ -71,3 +71,4 @@ C:\Users\howl1\Source\Repos\srKazuhiro-dev\PORTAFOLIO\portafoliomundo\obj\Debug\
 C:\Users\howl1\Source\Repos\srKazuhiro-dev\PORTAFOLIO\portafoliomundo\obj\Debug\net6.0-windows\portafoliomundo.pdb
 C:\Users\howl1\Source\Repos\srKazuhiro-dev\PORTAFOLIO\portafoliomundo\obj\Debug\net6.0-windows\portafoliomundo.genruntimeconfig.cache
 C:\Users\howl1\Source\Repos\srKazuhiro-dev\PORTAFOLIO\portafoliomundo\obj\Debug\net6.0-windows\ref\portafoliomundo.dll
+C:\Users\howl1\Source\Repos\srKazuhiro-dev\PORTAFOLIO\portafoliomundo\obj\Debug\net6.0-windows\portafoliomundo.menubodega.resources
