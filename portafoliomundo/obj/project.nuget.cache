@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "OxqsQ/xKHRikrGaChXqf2jdt73kxqttY04bbkNnx6ebDfTCPOA+MlY0rLFtGvr/eKDL/LVnli/VJ9D9UNdSmjA==",
+  "dgSpecHash": "/di50ZJGEXb0P/Ym8hSHgT6jK0+VCE8DyKQ2qrcymKvwsHHyfU/8RQM0I2rQQ9C8KVpsdVKw+kWaleNooWRq+g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nacho\\Source\\Repos\\srKazuhiro-dev\\PORTAFOLIO\\portafoliomundo\\portafoliomundo.vbproj",
+  "projectFilePath": "C:\\Users\\howl1\\Source\\Repos\\srKazuhiro-dev\\PORTAFOLIO\\portafoliomundo\\portafoliomundo.vbproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Nacho\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512"
+    "C:\\Users\\howl1\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -39,24 +39,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nacho\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\howl1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nacho\\Source\\Repos\\srKazuhiro-dev\\PORTAFOLIO\\portafoliomundo\\portafoliomundo.vbproj",
+      "projectUniqueName": "C:\\Users\\howl1\\Source\\Repos\\srKazuhiro-dev\\PORTAFOLIO\\portafoliomundo\\portafoliomundo.vbproj",
       "projectName": "portafoliomundo",
-      "projectPath": "C:\\Users\\Nacho\\Source\\Repos\\srKazuhiro-dev\\PORTAFOLIO\\portafoliomundo\\portafoliomundo.vbproj",
-      "packagesPath": "C:\\Users\\Nacho\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nacho\\Source\\Repos\\srKazuhiro-dev\\PORTAFOLIO\\portafoliomundo\\obj\\",
+      "projectPath": "C:\\Users\\howl1\\Source\\Repos\\srKazuhiro-dev\\PORTAFOLIO\\portafoliomundo\\portafoliomundo.vbproj",
+      "packagesPath": "C:\\Users\\howl1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\howl1\\Source\\Repos\\srKazuhiro-dev\\PORTAFOLIO\\portafoliomundo\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Nacho\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\howl1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +59,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -107,7 +101,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

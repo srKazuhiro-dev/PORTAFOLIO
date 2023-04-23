@@ -62,7 +62,7 @@ Public Class menujefe
     Private Sub Disablebutton()
         If currentbtn IsNot Nothing Then
             'Boton
-            currentbtn.BackColor = Color.FromArgb(37, 36, 81)
+            currentbtn.BackColor = Color.FromArgb(31, 30, 68)
             currentbtn.ForeColor = Color.Gainsboro
             currentbtn.IconColor = Color.Gainsboro
             currentbtn.TextAlign = ContentAlignment.MiddleLeft
@@ -123,7 +123,7 @@ Public Class menujefe
 
     Private Sub btnempleado_Click(sender As Object, e As EventArgs) Handles btnempleado.Click
         'color bnt
-        activerbutton(sender, RGBColors.color4)
+        activerbutton(sender, RGBColors.color6)
         'abrir form
         openchildform(New Empleados)
     End Sub
