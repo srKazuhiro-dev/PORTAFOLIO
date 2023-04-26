@@ -36,24 +36,24 @@ Public Class Inventario
 
 
     'EVENTOS + BOTONES 
-    Private Sub btnañadir_Click(sender As Object, e As EventArgs) Handles btnañadir.Click
+    Private Sub btnañadir_Click_1(sender As Object, e As EventArgs) Handles btnañadir.Click
         'color buton
-        activateButton(sender, RGBColors.color3)
+        activateButton(sender, RGBColors.color2)
     End Sub
 
-    Private Sub btnmodificar_Click(sender As Object, e As EventArgs) Handles btnmodificar.Click
+    Private Sub btnmodificar_Click_1(sender As Object, e As EventArgs) Handles btnmodificar.Click
         'color buton
-        activateButton(sender, RGBColors.color3)
+        activateButton(sender, RGBColors.color2)
     End Sub
 
-    Private Sub btneliminar_Click(sender As Object, e As EventArgs) Handles btneliminar.Click
+    Private Sub btneliminar_Click_1(sender As Object, e As EventArgs) Handles btneliminar.Click
         'color buton
-        activateButton(sender, RGBColors.color3)
+        activateButton(sender, RGBColors.color2)
     End Sub
 
     Private Sub btnactualizar_Click(sender As Object, e As EventArgs) Handles btnactualizar.Click
         'color buton
-        activateButton(sender, RGBColors.color3)
+        activateButton(sender, RGBColors.color2)
     End Sub
     ' Fin BTN
 

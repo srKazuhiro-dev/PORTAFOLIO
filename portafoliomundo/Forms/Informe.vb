@@ -36,16 +36,16 @@ Public Class Informe
 
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
         'color bnt
-        activateButton(sender, RGBColors.color2)
+        activateButton(sender, RGBColors.color4)
     End Sub
 
     Private Sub btnActualiza_Click(sender As Object, e As EventArgs) Handles btnActualiza.Click
         'color bnt
-        activateButton(sender, RGBColors.color2)
+        activateButton(sender, RGBColors.color4)
     End Sub
 
     Private Sub btnImprimir_Click(sender As Object, e As EventArgs) Handles btnImprimir.Click
         'color bnt
-        activateButton(sender, RGBColors.color2)
+        activateButton(sender, RGBColors.color4)
     End Sub
 End Class

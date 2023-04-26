@@ -35,6 +35,8 @@ Partial Class Inventario
         btnmodificar = New FontAwesome.Sharp.IconButton()
         btneliminar = New FontAwesome.Sharp.IconButton()
         btnactualizar = New FontAwesome.Sharp.IconButton()
+        txtPrecio = New TextBox()
+        lblprecio = New Label()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -46,7 +48,7 @@ Partial Class Inventario
         lblID.Name = "lblID"
         lblID.Size = New Size(24, 20)
         lblID.TabIndex = 3
-        lblID.Text = "ID" ' 
+        lblID.Text = "ID"' 
         ' txtID
         ' 
         txtID.Location = New Point(12, 32)
@@ -94,7 +96,7 @@ Partial Class Inventario
         lblMarca.Name = "lblMarca"
         lblMarca.Size = New Size(50, 20)
         lblMarca.TabIndex = 19
-        lblMarca.Text = "Marca" ' 
+        lblMarca.Text = "Marca"' 
         ' lblDescripcion
         ' 
         lblDescripcion.AutoSize = True
@@ -103,7 +105,7 @@ Partial Class Inventario
         lblDescripcion.Name = "lblDescripcion"
         lblDescripcion.Size = New Size(87, 20)
         lblDescripcion.TabIndex = 20
-        lblDescripcion.Text = "Descripción" ' 
+        lblDescripcion.Text = "Descripción"' 
         ' lblStock
         ' 
         lblStock.AutoSize = True
@@ -112,7 +114,7 @@ Partial Class Inventario
         lblStock.Name = "lblStock"
         lblStock.Size = New Size(45, 20)
         lblStock.TabIndex = 21
-        lblStock.Text = "Stock" ' 
+        lblStock.Text = "Stock"' 
         ' btnañadir
         ' 
         btnañadir.Anchor = AnchorStyles.Bottom Or AnchorStyles.Right
@@ -123,7 +125,7 @@ Partial Class Inventario
         btnañadir.IconFont = FontAwesome.Sharp.IconFont.Auto
         btnañadir.IconSize = 32
         btnañadir.ImageAlign = ContentAlignment.MiddleLeft
-        btnañadir.Location = New Point(257, 412)
+        btnañadir.Location = New Point(280, 439)
         btnañadir.Name = "btnañadir"
         btnañadir.Padding = New Padding(10, 0, 20, 0)
         btnañadir.Size = New Size(145, 47)
@@ -143,7 +145,7 @@ Partial Class Inventario
         btnmodificar.IconFont = FontAwesome.Sharp.IconFont.Auto
         btnmodificar.IconSize = 32
         btnmodificar.ImageAlign = ContentAlignment.MiddleLeft
-        btnmodificar.Location = New Point(425, 412)
+        btnmodificar.Location = New Point(448, 439)
         btnmodificar.Name = "btnmodificar"
         btnmodificar.Padding = New Padding(10, 0, 20, 0)
         btnmodificar.Size = New Size(145, 47)
@@ -163,7 +165,7 @@ Partial Class Inventario
         btneliminar.IconFont = FontAwesome.Sharp.IconFont.Auto
         btneliminar.IconSize = 32
         btneliminar.ImageAlign = ContentAlignment.MiddleLeft
-        btneliminar.Location = New Point(598, 412)
+        btneliminar.Location = New Point(621, 439)
         btneliminar.Name = "btneliminar"
         btneliminar.Padding = New Padding(10, 0, 20, 0)
         btneliminar.Size = New Size(145, 47)
@@ -183,7 +185,7 @@ Partial Class Inventario
         btnactualizar.IconFont = FontAwesome.Sharp.IconFont.Auto
         btnactualizar.IconSize = 32
         btnactualizar.ImageAlign = ContentAlignment.MiddleLeft
-        btnactualizar.Location = New Point(772, 412)
+        btnactualizar.Location = New Point(795, 439)
         btnactualizar.Name = "btnactualizar"
         btnactualizar.Padding = New Padding(10, 0, 20, 0)
         btnactualizar.Size = New Size(145, 47)
@@ -193,12 +195,30 @@ Partial Class Inventario
         btnactualizar.TextImageRelation = TextImageRelation.ImageBeforeText
         btnactualizar.UseVisualStyleBackColor = True
         ' 
+        ' txtPrecio
+        ' 
+        txtPrecio.Location = New Point(12, 325)
+        txtPrecio.Name = "txtPrecio"
+        txtPrecio.Size = New Size(182, 27)
+        txtPrecio.TabIndex = 26
+        ' 
+        ' lblprecio
+        ' 
+        lblprecio.AutoSize = True
+        lblprecio.ForeColor = Color.Gainsboro
+        lblprecio.Location = New Point(12, 303)
+        lblprecio.Name = "lblprecio"
+        lblprecio.Size = New Size(50, 20)
+        lblprecio.TabIndex = 27
+        lblprecio.Text = "Precio"' 
         ' Inventario
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(34), CByte(33), CByte(74))
         ClientSize = New Size(963, 498)
+        Controls.Add(lblprecio)
+        Controls.Add(txtPrecio)
         Controls.Add(btnactualizar)
         Controls.Add(btneliminar)
         Controls.Add(btnmodificar)
@@ -231,4 +251,6 @@ Partial Class Inventario
     Friend WithEvents btnmodificar As FontAwesome.Sharp.IconButton
     Friend WithEvents btneliminar As FontAwesome.Sharp.IconButton
     Friend WithEvents btnactualizar As FontAwesome.Sharp.IconButton
+    Friend WithEvents txtPrecio As TextBox
+    Friend WithEvents lblprecio As Label
 End Class
