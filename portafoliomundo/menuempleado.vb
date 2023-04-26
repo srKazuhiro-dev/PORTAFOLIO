@@ -100,7 +100,7 @@ Public Class menuempleado
         'color boton
         activatebutton(sender, RGBColors.color6)
         'cambio form
-        'openchildform(New )
+        openchildform(New Inventario)
     End Sub
 
     Private Sub btnRcliente_Click(sender As Object, e As EventArgs) Handles btnRcliente.Click

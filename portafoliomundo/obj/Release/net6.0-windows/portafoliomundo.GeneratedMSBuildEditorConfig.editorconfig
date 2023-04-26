@@ -1,6 +1,6 @@
 is_global = true
 build_property.ApplicationManifest = 
-build_property.StartupObject = portafoliomundo.menubodega
+build_property.StartupObject = portafoliomundo.menujefe
 build_property.ApplicationDefaultFont = 
 build_property.ApplicationHighDpiMode = 
 build_property.ApplicationUseCompatibleTextRendering = 
@@ -14,4 +14,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = portafoliomundo
-build_property.ProjectDir = C:\Users\howl1\Source\Repos\srKazuhiro-dev\PORTAFOLIO\portafoliomundo\
+build_property.ProjectDir = C:\Users\howl1\OneDrive\Escritorio\portafolio git\PORTAFOLIO\portafoliomundo\

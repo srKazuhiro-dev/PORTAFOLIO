@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\howl1\\Source\\Repos\\srKazuhiro-dev\\PORTAFOLIO\\portafoliomundo\\portafoliomundo.vbproj": {}
+    "C:\\Users\\howl1\\OneDrive\\Escritorio\\portafolio git\\PORTAFOLIO\\portafoliomundo\\portafoliomundo.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\howl1\\Source\\Repos\\srKazuhiro-dev\\PORTAFOLIO\\portafoliomundo\\portafoliomundo.vbproj": {
+    "C:\\Users\\howl1\\OneDrive\\Escritorio\\portafolio git\\PORTAFOLIO\\portafoliomundo\\portafoliomundo.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\howl1\\Source\\Repos\\srKazuhiro-dev\\PORTAFOLIO\\portafoliomundo\\portafoliomundo.vbproj",
+        "projectUniqueName": "C:\\Users\\howl1\\OneDrive\\Escritorio\\portafolio git\\PORTAFOLIO\\portafoliomundo\\portafoliomundo.vbproj",
         "projectName": "portafoliomundo",
-        "projectPath": "C:\\Users\\howl1\\Source\\Repos\\srKazuhiro-dev\\PORTAFOLIO\\portafoliomundo\\portafoliomundo.vbproj",
+        "projectPath": "C:\\Users\\howl1\\OneDrive\\Escritorio\\portafolio git\\PORTAFOLIO\\portafoliomundo\\portafoliomundo.vbproj",
         "packagesPath": "C:\\Users\\howl1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\howl1\\Source\\Repos\\srKazuhiro-dev\\PORTAFOLIO\\portafoliomundo\\obj\\",
+        "outputPath": "C:\\Users\\howl1\\OneDrive\\Escritorio\\portafolio git\\PORTAFOLIO\\portafoliomundo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\howl1\\AppData\\Roaming\\NuGet\\NuGet.Config",

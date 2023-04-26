@@ -53,8 +53,6 @@ Public Class menujefe
             iconactual.IconColor = customcolor
 
 
-
-
         End If
 
     End Sub
@@ -100,36 +98,6 @@ Public Class menujefe
     ' End Sub
     '---------------------------------------------------------------------
     'Botones General + eventos 
-    Private Sub btnproveedor_Click(sender As Object, e As EventArgs) Handles btnproveedor.Click
-        'color bnt
-        activerbutton(sender, RGBColors.color1)
-        'abrir form
-        openchildform(New Proveedores)
-    End Sub
-
-    Private Sub btninventario_Click(sender As Object, e As EventArgs) Handles btninventario.Click
-        'color bnt
-        activerbutton(sender, RGBColors.color2)
-        'abrir form
-        openchildform(New Inventario)
-    End Sub
-
-    Private Sub btninforme_Click(sender As Object, e As EventArgs) Handles btninforme.Click
-        'color bnt
-        activerbutton(sender, RGBColors.color3)
-        'abrir form
-        openchildform(New Inventario)
-    End Sub
-
-    Private Sub btnempleado_Click(sender As Object, e As EventArgs) Handles btnempleado.Click
-        'color bnt
-        activerbutton(sender, RGBColors.color6)
-        'abrir form
-        openchildform(New Empleados)
-    End Sub
-
-    'fin btn
-    '-------------------------------------------------------'
     'Movimiento de form
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
     Private Shared Sub ReleaseCapture()
@@ -139,19 +107,7 @@ Public Class menujefe
                                                                                         ByVal lParam As Integer)
     End Sub
 
-    Private Sub paneltitle_MouseDown_1(sender As Object, e As MouseEventArgs) Handles paneltitle.MouseDown
-        ReleaseCapture()
-        SendMessage(Me.Handle, &H112&, &HF012&, 0)
-    End Sub
     '---------------------------------------------------------------'
-    'Home
-    Private Sub imghome_Click(sender As Object, e As EventArgs) Handles imghome.Click
-        If currentchildform IsNot Nothing Then
-            currentchildform.Close()
-
-        End If
-        reset()
-    End Sub
 
     'Metodo para restablecer valores 
     Private Sub reset()
@@ -161,6 +117,58 @@ Public Class menujefe
         iconactual.IconColor = Color.MediumPurple
         lblformtitle.Text = " Home "
     End Sub
+
+
+    'EVENTOS + BOTONES 
+
+    Private Sub btninventario_Click_1(sender As Object, e As EventArgs) Handles btninventario.Click
+        'color bnt
+        activerbutton(sender, RGBColors.color2)
+        'abrir form
+        openchildform(New Inventario)
+
+    End Sub
+
+    Private Sub btnproveedor_Click_1(sender As Object, e As EventArgs) Handles btnproveedor.Click
+        'color bnt
+        activerbutton(sender, RGBColors.color3)
+        'abrir form
+        openchildform(New Proveedores)
+    End Sub
+
+    Private Sub btninforme_Click(sender As Object, e As EventArgs) Handles btninforme.Click
+        'color bnt
+        activerbutton(sender, RGBColors.color4)
+        'abrir form
+        openchildform(New Informe)
+    End Sub
+    Private Sub btnempleado_Click(sender As Object, e As EventArgs) Handles btnempleado.Click
+        'color bnt
+        activerbutton(sender, RGBColors.color5)
+        'abrir form
+        openchildform(New Empleados)
+    End Sub
+    ' FIN EVENTOS + BOTONES 
+
+    'Home
+    Private Sub imghome_Click_1(sender As Object, e As EventArgs) Handles imghome.Click
+        If currentchildform IsNot Nothing Then
+            currentchildform.Close()
+
+        End If
+        reset()
+    End Sub
+    'FIN HOME
+    'MOVIMIENTO TITLE PANEL
+
+    Private Sub paneltitle_Paint(sender As Object, e As PaintEventArgs) Handles paneltitle.Paint
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112&, &HF012&, 0)
+    End Sub
+
+    'FIN TITLE POANEL MOV
+
+
 
 
 End Class

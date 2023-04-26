@@ -52,7 +52,7 @@ Partial Class menuempleado
         panelmenu.Dock = DockStyle.Left
         panelmenu.Location = New Point(0, 0)
         panelmenu.Name = "panelmenu"
-        panelmenu.Size = New Size(220, 620)
+        panelmenu.Size = New Size(220, 654)
         panelmenu.TabIndex = 0
         ' 
         ' btnRventas
@@ -166,7 +166,7 @@ Partial Class menuempleado
         paneltitle.Dock = DockStyle.Top
         paneltitle.Location = New Point(220, 0)
         paneltitle.Name = "paneltitle"
-        paneltitle.Size = New Size(981, 75)
+        paneltitle.Size = New Size(1048, 75)
         paneltitle.TabIndex = 1
         ' 
         ' lblformtitle
@@ -198,14 +198,14 @@ Partial Class menuempleado
         paneldesktop.Dock = DockStyle.Fill
         paneldesktop.Location = New Point(220, 75)
         paneldesktop.Name = "paneldesktop"
-        paneldesktop.Size = New Size(981, 545)
+        paneldesktop.Size = New Size(1048, 579)
         paneldesktop.TabIndex = 5
         ' 
         ' menuempleado
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1201, 620)
+        ClientSize = New Size(1268, 654)
         Controls.Add(paneldesktop)
         Controls.Add(paneltitle)
         Controls.Add(panelmenu)
