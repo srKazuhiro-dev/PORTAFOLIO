@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class menubodega
+Partial Class menuBodega
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,88 +22,89 @@ Partial Class menubodega
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(menubodega))
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(menuBodega))
         panelmenu = New Panel()
-        Inventario = New FontAwesome.Sharp.IconButton()
-        panellogo = New Panel()
+        btnInventario = New FontAwesome.Sharp.IconButton()
+        panelLogo = New Panel()
         imgHome = New PictureBox()
-        paneltitle = New Panel()
+        panelTitle = New Panel()
         lblformtitle = New Label()
         iconactual = New FontAwesome.Sharp.IconPictureBox()
         paneldesktop = New Panel()
         panelmenu.SuspendLayout()
-        panellogo.SuspendLayout()
+        panelLogo.SuspendLayout()
         CType(imgHome, ComponentModel.ISupportInitialize).BeginInit()
-        paneltitle.SuspendLayout()
+        panelTitle.SuspendLayout()
         CType(iconactual, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' panelmenu
         ' 
         panelmenu.BackColor = Color.FromArgb(CByte(31), CByte(30), CByte(68))
-        panelmenu.Controls.Add(Inventario)
-        panelmenu.Controls.Add(panellogo)
+        panelmenu.Controls.Add(btnInventario)
+        panelmenu.Controls.Add(panelLogo)
         panelmenu.Dock = DockStyle.Left
-        panelmenu.Location = New Point(10, 0)
+        panelmenu.Location = New Point(0, 0)
         panelmenu.Name = "panelmenu"
-        panelmenu.Size = New Size(220, 620)
+        panelmenu.Size = New Size(220, 654)
         panelmenu.TabIndex = 0
         ' 
-        ' Inventario
+        ' btnInventario
         ' 
-        Inventario.Dock = DockStyle.Top
-        Inventario.FlatAppearance.BorderSize = 0
-        Inventario.FlatStyle = FlatStyle.Flat
-        Inventario.ForeColor = Color.Gainsboro
-        Inventario.IconChar = FontAwesome.Sharp.IconChar.BoxesAlt
-        Inventario.IconColor = Color.Gainsboro
-        Inventario.IconFont = FontAwesome.Sharp.IconFont.Auto
-        Inventario.IconSize = 32
-        Inventario.ImageAlign = ContentAlignment.MiddleLeft
-        Inventario.Location = New Point(0, 140)
-        Inventario.Name = "Inventario"
-        Inventario.Size = New Size(220, 60)
-        Inventario.TabIndex = 2
-        Inventario.Text = "Inventario"
-        Inventario.TextAlign = ContentAlignment.MiddleLeft
-        Inventario.TextImageRelation = TextImageRelation.ImageBeforeText
-        Inventario.UseVisualStyleBackColor = True
+        btnInventario.Dock = DockStyle.Top
+        btnInventario.FlatAppearance.BorderSize = 0
+        btnInventario.FlatStyle = FlatStyle.Flat
+        btnInventario.ForeColor = Color.Gainsboro
+        btnInventario.IconChar = FontAwesome.Sharp.IconChar.BoxesAlt
+        btnInventario.IconColor = Color.Gainsboro
+        btnInventario.IconFont = FontAwesome.Sharp.IconFont.Auto
+        btnInventario.IconSize = 32
+        btnInventario.ImageAlign = ContentAlignment.MiddleLeft
+        btnInventario.Location = New Point(0, 140)
+        btnInventario.Name = "btnInventario"
+        btnInventario.Padding = New Padding(10, 0, 20, 0)
+        btnInventario.Size = New Size(220, 60)
+        btnInventario.TabIndex = 1
+        btnInventario.Text = "Inventario"
+        btnInventario.TextAlign = ContentAlignment.MiddleLeft
+        btnInventario.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnInventario.UseVisualStyleBackColor = True
         ' 
-        ' panellogo
+        ' panelLogo
         ' 
-        panellogo.Controls.Add(imgHome)
-        panellogo.Dock = DockStyle.Top
-        panellogo.Location = New Point(0, 0)
-        panellogo.Name = "panellogo"
-        panellogo.Size = New Size(220, 140)
-        panellogo.TabIndex = 1
+        panelLogo.Controls.Add(imgHome)
+        panelLogo.Dock = DockStyle.Top
+        panelLogo.Location = New Point(0, 0)
+        panelLogo.Name = "panelLogo"
+        panelLogo.Size = New Size(220, 140)
+        panelLogo.TabIndex = 0
         ' 
         ' imgHome
         ' 
         imgHome.Image = CType(resources.GetObject("imgHome.Image"), Image)
-        imgHome.Location = New Point(0, 0)
+        imgHome.Location = New Point(3, 3)
         imgHome.Name = "imgHome"
-        imgHome.Size = New Size(220, 140)
+        imgHome.Size = New Size(214, 134)
         imgHome.SizeMode = PictureBoxSizeMode.Zoom
         imgHome.TabIndex = 0
         imgHome.TabStop = False
         ' 
-        ' paneltitle
+        ' panelTitle
         ' 
-        paneltitle.BackColor = Color.FromArgb(CByte(26), CByte(25), CByte(62))
-        paneltitle.Controls.Add(lblformtitle)
-        paneltitle.Controls.Add(iconactual)
-        paneltitle.Dock = DockStyle.Top
-        paneltitle.Location = New Point(230, 0)
-        paneltitle.Name = "paneltitle"
-        paneltitle.Size = New Size(951, 75)
-        paneltitle.TabIndex = 1
+        panelTitle.BackColor = Color.FromArgb(CByte(26), CByte(25), CByte(62))
+        panelTitle.Controls.Add(lblformtitle)
+        panelTitle.Controls.Add(iconactual)
+        panelTitle.Dock = DockStyle.Top
+        panelTitle.Location = New Point(220, 0)
+        panelTitle.Name = "panelTitle"
+        panelTitle.Size = New Size(1048, 75)
+        panelTitle.TabIndex = 2
         ' 
         ' lblformtitle
         ' 
         lblformtitle.AutoSize = True
         lblformtitle.ForeColor = Color.Gainsboro
-        lblformtitle.Location = New Point(66, 16)
+        lblformtitle.Location = New Point(73, 32)
         lblformtitle.Name = "lblformtitle"
         lblformtitle.Size = New Size(50, 20)
         lblformtitle.TabIndex = 1
@@ -112,11 +113,11 @@ Partial Class menubodega
         ' 
         iconactual.BackColor = Color.FromArgb(CByte(26), CByte(25), CByte(62))
         iconactual.ForeColor = Color.MediumPurple
-        iconactual.IconChar = FontAwesome.Sharp.IconChar.House
+        iconactual.IconChar = FontAwesome.Sharp.IconChar.HomeLg
         iconactual.IconColor = Color.MediumPurple
         iconactual.IconFont = FontAwesome.Sharp.IconFont.Auto
         iconactual.IconSize = 40
-        iconactual.Location = New Point(20, 16)
+        iconactual.Location = New Point(27, 12)
         iconactual.Name = "iconactual"
         iconactual.Size = New Size(40, 40)
         iconactual.TabIndex = 0
@@ -126,36 +127,35 @@ Partial Class menubodega
         ' 
         paneldesktop.BackColor = Color.FromArgb(CByte(34), CByte(33), CByte(74))
         paneldesktop.Dock = DockStyle.Fill
-        paneldesktop.Location = New Point(230, 75)
+        paneldesktop.Location = New Point(220, 75)
         paneldesktop.Name = "paneldesktop"
-        paneldesktop.Size = New Size(951, 545)
-        paneldesktop.TabIndex = 2
+        paneldesktop.Size = New Size(1048, 579)
+        paneldesktop.TabIndex = 3
         ' 
-        ' menubodega
+        ' menuBodega
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1201, 620)
+        ClientSize = New Size(1268, 654)
         Controls.Add(paneldesktop)
-        Controls.Add(paneltitle)
+        Controls.Add(panelTitle)
         Controls.Add(panelmenu)
-        Name = "menubodega"
-        Padding = New Padding(10, 0, 20, 0)
-        Text = "menubodega"
+        Name = "menuBodega"
+        Text = "menuBodega"
         panelmenu.ResumeLayout(False)
-        panellogo.ResumeLayout(False)
+        panelLogo.ResumeLayout(False)
         CType(imgHome, ComponentModel.ISupportInitialize).EndInit()
-        paneltitle.ResumeLayout(False)
-        paneltitle.PerformLayout()
+        panelTitle.ResumeLayout(False)
+        panelTitle.PerformLayout()
         CType(iconactual, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents panelmenu As Panel
-    Friend WithEvents Inventario As FontAwesome.Sharp.IconButton
-    Friend WithEvents panellogo As Panel
+    Friend WithEvents btnInventario As FontAwesome.Sharp.IconButton
+    Friend WithEvents panelLogo As Panel
     Friend WithEvents imgHome As PictureBox
-    Friend WithEvents paneltitle As Panel
+    Friend WithEvents panelTitle As Panel
     Friend WithEvents lblformtitle As Label
     Friend WithEvents iconactual As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents paneldesktop As Panel

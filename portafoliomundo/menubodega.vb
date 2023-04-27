@@ -1,135 +1,108 @@
-﻿Imports System.Runtime.InteropServices   'IMPORT LIBRERY DLL.USER32
-Imports FontAwesome.Sharp ' importar librerio fontawesone importante para funcionamiento de app 
+﻿Imports FontAwesome.Sharp
 
-
-Public Class menubodega
+Public Class menuBodega
     'fields
     Private currentBtn As IconButton
-    Private leftborderBtn As Panel
-    Private currentchildform As Form
+    Private leftBorderBtn As Panel
+    Private currentChildForm As Form
 
-
-    'Constructor 
+    'contrustor 
     Public Sub New()
 
         ' Esta llamada es exigida por el diseñador.
         InitializeComponent()
 
         ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
-        leftborderBtn = New Panel()
-        leftborderBtn.Size = New Size(7, 60)
-        panelmenu.Controls.Add(leftborderBtn)
+
+        leftBorderBtn = New Panel()
+        leftBorderBtn.Size = New Size(7, 60)
+        panelmenu.Controls.Add(leftBorderBtn)
+
     End Sub
 
 
-    'Metodos 
-    Private Sub activateButton(SenderBtn As Object, customColor As Color)
-        If SenderBtn IsNot Nothing Then
-            disablebutton()
-            'botones 
-            currentBtn = CType(SenderBtn, IconButton)
+    'FORMULARIO HIJO
+    Private Sub OpenChildForm(childForm As Form)
+        'Abrir form
+        If currentChildForm IsNot Nothing Then
+            currentChildForm.Close()
+        End If
+        currentChildForm = childForm
+        'Fin
+        childForm.TopLevel = False
+        childForm.FormBorderStyle = FormBorderStyle.None
+        childForm.Dock = DockStyle.Fill
+        paneldesktop.Controls.Add(childForm)
+        paneldesktop.Tag = childForm
+        childForm.BringToFront()
+        childForm.Show()
+        lblformtitle.Text = childForm.Text
+    End Sub
+
+
+
+
+    'ACTIVAR Y DESACTIVAR COLORES 
+    Private Sub activatebutton(senderbtn As Object, customcolor As Color)
+        If senderbtn IsNot Nothing Then
+            Disablebutton()
+            'Boton
+            currentBtn = CType(senderbtn, IconButton)
             currentBtn.BackColor = Color.FromArgb(37, 36, 81)
-            currentBtn.ForeColor = customColor
-            currentBtn.IconColor = customColor
+            currentBtn.ForeColor = customcolor
+            currentBtn.IconColor = customcolor
             currentBtn.TextAlign = ContentAlignment.MiddleCenter
             currentBtn.ImageAlign = ContentAlignment.MiddleRight
             currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage
-
             'borde izq
-            leftborderBtn.BackColor = customColor
-            leftborderBtn.Location = New Point(0, currentBtn.Location.Y)
-            leftborderBtn.Visible = True
-            leftborderBtn.BringToFront()
-
-
-            'icon actual
+            leftBorderBtn.BackColor = customcolor
+            leftBorderBtn.Location = New Point(0, currentBtn.Location.Y)
+            leftBorderBtn.Visible = True
+            leftBorderBtn.BringToFront()
+            'icono de formulario actual
             iconactual.IconChar = currentBtn.IconChar
-            iconactual.IconColor = customColor
+            iconactual.IconColor = customcolor
+
 
         End If
-    End Sub
 
-    Private Sub disablebutton()
+    End Sub
+    'DESACTIVAR BTN
+    Private Sub Disablebutton()
         If currentBtn IsNot Nothing Then
+            'Boton
             currentBtn.BackColor = Color.FromArgb(31, 30, 68)
             currentBtn.ForeColor = Color.Gainsboro
             currentBtn.IconColor = Color.Gainsboro
             currentBtn.TextAlign = ContentAlignment.MiddleLeft
             currentBtn.ImageAlign = ContentAlignment.MiddleLeft
             currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText
-
         End If
     End Sub
 
 
-    'formularios hijos 
-    Private Sub OpenChildForm(childform As Form)
-        'Open only form
-        If currentchildform IsNot Nothing Then
-            currentchildform.Close()
 
-        End If
-        currentchildform = childform
-        'fin
-        childform.TopLevel = False  ' Deja que el form pueda abirse en el panel ya que no queda como superior 
-        childform.FormBorderStyle = FormBorderStyle.None
-        childform.Dock = DockStyle.Fill
-        paneldesktop.Controls.Add(childform)
-        paneldesktop.Tag = childform
-        childform.BringToFront()
-        childform.Show()
-        lblformtitle.Text = childform.Text
-
-
-
-    End Sub
-
-
-
-
-
-    'Eventos + botones 
-
-    Private Sub Inventario_Click(sender As Object, e As EventArgs) Handles Inventario.Click
-        'color buton
-        activateButton(sender, RGBColors.color3)
-        'abrir fomulario 
+    'EVENTOS + BOTONES 
+    Private Sub btnInventario_Click(sender As Object, e As EventArgs) Handles btnInventario.Click
+        'BOTON COLOR
+        activatebutton(sender, RGBColors.color1)
+        'Abrir Form
         OpenChildForm(New Inventario)
-
-
     End Sub
 
     Private Sub imgHome_Click(sender As Object, e As EventArgs) Handles imgHome.Click
-        If currentchildform IsNot Nothing Then
-            currentchildform.Close()
-
+        If currentChildForm IsNot Nothing Then
+            currentChildForm.Close()
         End If
-        Reset()
+        reset()
     End Sub
 
-    Private Sub Reset()
-        disablebutton()
-        leftborderBtn.Visible = False
+    Private Sub reset()
+        Disablebutton()
+        leftBorderBtn.Visible = False
         iconactual.IconChar = IconChar.Home
         iconactual.IconColor = Color.MediumPurple
         lblformtitle.Text = "Home"
-
-
     End Sub
 
-
-
-    'Movimiento de form
-    <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
-    Private Shared Sub ReleaseCapture()
-    End Sub
-    <DllImport("user32.DLL", EntryPoint:="SendMessage")>
-    Private Shared Sub SendMessage(ByVal hWnd As System.IntPtr, ByVal wMsg As Integer, ByVal wParam As Integer,
-                                                                                        ByVal lParam As Integer)
-    End Sub
-
-    Private Sub paneltitle_MouseDown(sender As Object, e As MouseEventArgs) Handles paneltitle.MouseDown
-        ReleaseCapture()
-        SendMessage(Me.Handle, &H112&, &HF012&, 0)
-    End Sub
 End Class
