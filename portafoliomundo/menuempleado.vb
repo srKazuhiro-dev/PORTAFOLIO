@@ -126,6 +126,7 @@ Public Class menuempleado
 
     Private Sub reset()
         disablebutton()
+        leftBorderBtn.Visible = False
         iconactual.IconChar = IconChar.Home
         iconactual.IconColor = Color.MediumPurple
         lblformtitle.Text = "Home"
